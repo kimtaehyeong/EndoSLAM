@@ -28,7 +28,7 @@ The experimentally collected dataset is designed to meet the following major req
 The equipment employed during generation of the dataset from eight ex-vivo porcine GI-tract organs as following:
 
 <p align="center">
-<img src='imgs/collage_with_cams.png' width=620/> 
+<img src='imgs/setup_college.png' width=620/> 
 </p>
 
 - **a)** Franka Emika Panda: robotic arm employed as motion device.
