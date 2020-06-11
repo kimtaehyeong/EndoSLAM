@@ -31,19 +31,7 @@ The equipment employed during generation of the dataset from eight ex-vivo porci
 <img src='imgs/setup_college.png' width=620/> 
 </p>
 
-- **a** Franka Emika Panda: robotic arm employed as motion device.
-- **b** Capsule Holder: special production two-piece holder used as a medium between the WCE cameras and the robotic arm.
-- **c** MiroCam Data Belt PillCam capsule endoscope
-- **d** Real Porcine Colon: sewn onto an 'L' shaped semi-cylindrical scaffold in high-density foam.
-- **e** MiroCam MR1100 receiver: Digital video grabber that converts analog data from receiver into digital to computer.
-- **f** PillCam recorder
-- **g** Artec Eva: 3D scanner used to generate ground truth - ply file. 
-- **h** EinScan Pro 2X: 3D scanner used to generate ground truth - .ply, .obj, .stl and .ASC file.
-- **i** Wireless Endoscope Camera (YPC-HD720P): high resolution - 1280×720 and HD640×480. 
-- **j** Endoscope 3 in 1 Camera: low resolution - 640×480.
-- **k** Camera Holder: special design one-piece holder for the high and low resolution endoscope cameras used to fixed on the robotic arm.
-- **l** PillCam COLON2: WCE double tip camera.
-- **m** MiroCam Regular MC1000-W: WCE camera employed to capture frames from real porcine stomach and send to receiver. 
+**a** Franka Emika Panda: robotic arm employed as motion device. **b** Capsule Holder: special production two-piece holder used as a medium between the WCE cameras and the robotic arm. **c** MiroCam Data Belt PillCam capsule endoscope **d** Real Porcine Colon: sewn onto an 'L' shaped semi-cylindrical scaffold in high-density foam. **e** MiroCam MR1100 receiver: Digital video grabber that converts analog data from receiver into digital to computer. **f** PillCam recorder **g** Artec Eva: 3D scanner used to generate ground truth - ply file.  **h** EinScan Pro 2X: 3D scanner used to generate ground truth - .ply, .obj, .stl and .ASC file. **i** Wireless Endoscope Camera (YPC-HD720P): high resolution - 1280×720 and HD640×480.  **j** Endoscope 3 in 1 Camera: low resolution - 640×480. **k** Camera Holder: special design one-piece holder for the high and low resolution endoscope cameras used to fixed on the robotic arm. **l** PillCam COLON2: WCE double tip camera. **m** MiroCam Regular MC1000-W: WCE camera employed to capture frames from real porcine stomach and send to receiver. 
 
 ### Collection of frames taken on endoscope trajectories
 
