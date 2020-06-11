@@ -57,7 +57,7 @@ The equipment employed during generation of the dataset from eight ex-vivo porci
 
 ```bash
 cd ~
-git clone https://github.com/Bengisu-ozyoruk/Endo-X-Dataset
+git clone https://github.com/CapsuleEndoscope/Endo-SLAM
 cd Endo-X-Dataset
 ```
 
