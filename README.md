@@ -136,14 +136,20 @@ Endo-SLAM-Dataset
 | 
 └── Cameras(Modified)
 |     └──PillCam, MiroCam, HighCam, LowCam
-|        ├── Calibration
-|        └── Colon-I,II,III,IV, Small Intestine, Stomach-I,II,III
-|              ├── Poses   
-|              └── Frames              
-|
+|         ├── Calibration
+|         └── Colon-I,II,III,IV, Small Intestine, Stomach-I,II,III
+|               ├── Poses   
+|               └── Frames              
+| 
 └── 3D_Scanners
-       └──Colon-III, Colon-IV, Small Intestine, Stomach-I,II,III 
-         └──(.fig, .obj, .ply, .ASC, .STL)  
+|     └──Colon-III, Colon-IV, Small Intestine, Stomach-I,II,III 
+|         └──(.fig, .obj, .ply, .ASC, .STL)  
+|
+└── Unity Camera
+      ├── Calibration
+      └── Colon
+          ├── Poses       
+          └── Frames 
 ```
 
 ## Results
