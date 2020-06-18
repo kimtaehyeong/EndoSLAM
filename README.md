@@ -6,6 +6,8 @@ In this repository, endoscopy image dataset and the codes to manipulte these ima
 " width="600" />
 </p>
 
+To watch the full version of the video, please visit [https://www.youtube.com/watch?v=G_LCe0aWWdQ](https://www.youtube.com/watch?v=G_LCe0aWWdQ)
+
 If you use this code and dataset, please cite:
 
 >    Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler,  Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Mehmet Turan. "Quantitative Evaluation of Endoscopic SLAM 
