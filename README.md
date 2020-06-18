@@ -1,6 +1,11 @@
 # Endo-SLAM Dataset
 In this repository, endoscopy image dataset and the codes to manipulte these images and how these modifications affect the visual odometry algorithms will be introduced. 
 
+<p align="center">
+  <img src="imgs/teaser.gif" alt="Quantitative Evaluation of Endoscopic SLAM Methods: Endo-SLAM Dataset
+" width="600" />
+</p>
+
 If you use this code and dataset, please cite:
 
 >    Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler,  Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Mehmet Turan. "Quantitative Evaluation of Endoscopic SLAM 
