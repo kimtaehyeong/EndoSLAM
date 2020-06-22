@@ -176,7 +176,7 @@ If you find this work useful in your research please consider citing our paper:
 ```
 @article{Bengisu2020,
     title={Quantitative Evaluation of EndoscopicSLAM Methods: ENDO-SLAM Dataset},
-    author={Kutsev Bengisu Ozyoruk, Gulfize Coskun, Guliz Irem Gokceler, Kagan Incetan, Guney Isik Tombak, Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Mehmet Turan},
+    author={Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler, Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Mehmet Turan},
     journal={arXiv preprint },
     year={2020}
 }
