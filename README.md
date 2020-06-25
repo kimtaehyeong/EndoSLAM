@@ -42,6 +42,8 @@ The equipment employed during generation of the dataset from eight ex-vivo porci
 
 ### Collection of frames taken on endoscope trajectories
 
+The ex-vivo part of dataset consists of a total of 42,700 frames. Of these, 21,428 images are from the HighCam, 17,978 images are from the LowCam, 239 images are from the PillCam and 3,055 images are from the MiroCam. Illustration of recorded frames are as following:
+
 <p align="center">
 <img src='imgs/camsamples_short5.png' width=620/> 
 </p>
@@ -51,7 +53,7 @@ The equipment employed during generation of the dataset from eight ex-vivo porci
 
 ### 3D-Scanner Images for Endo-SLAM Dataset
 
-3D-scanner images obtained for six organs which are fixed to scaffolds were cut in O, Z and L shapes to mimic the GI-tract path through the ascending  colon to  the  transverse  colon. 
+3D-scanner images obtained for six organs which are fixed to scaffolds that were cut in O, Z and L shapes to mimic the GI-tract path through the ascending  colon to  the  transverse  colon. Gathering point cloud data from two colon, one intestine and three stomach from different individuals make dataset appropriate for transfer learning algorithms. Besides, the algorithm performance on the tissue with various texture details for the same organ type can be tested.
 
 <p align="center">
 <img src='imgs/rgb_3d.png' width=620/> 
@@ -72,6 +74,8 @@ The steps and output maps aligned with the ground truth scanned data are demonst
 **a** shows input image sequences from Colon-IV, Small Intestine and Stomach-III trajectories which were downsampled to 4 fps and given as input to Scale Invariant Feature Transform (SIFT), separately. **b** shows the final panorama view which was formed by aligning and blending all input images. Specularities are suppressed using inpainting function of OpenCV. **c** shows 3D scanner point cloud data for each organ in ply-format. **d** shows pixel-wise depth values for inpainted images which were predicted using shape from shading. **e** shows the matched area between reference and aligned cloud points by emphasizing it with white dots. Iterative Closest Point(ICP) was used to align the ground truth data and reconstructed surface after manually labelling a common line segment. **f** shows the cloud mesh distances in the form of heatmap with the bar displaying the root mean square error values in terms of cm for color space. 
 
 ### Image Modifications
+
+For the purpose of studying the robustness of SLAM algorithms, the set of experimentally obtained images is augmented by applying image transformations that reduce the quality of the data. The new images are provided separately from the originals in the dataset. The transformations that are applied include resizing, gaussian blur, fish-eye distortion, depth-of-field simulation using shift-variant defocus blurring, and frame dropping. The resize, vignetting and gaussian blur transformations are implemented with the opencv-python library (version 4.2.0.32), fish-eye distortion with the Pygame library (version 1.9.6), and depth-of-field with Matlab (version R2020a)
 
 <p align="center">
 <img src='imgs/effects.png' width=620/> 
