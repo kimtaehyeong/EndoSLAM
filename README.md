@@ -6,8 +6,6 @@ In this repository, endoscopy image dataset and the codes to manipulte these ima
 " width="600" />
 </p>
 
-To watch the full version of the video, please visit [https://www.youtube.com/watch?v=G_LCe0aWWdQ](https://www.youtube.com/watch?v=G_LCe0aWWdQ)
-
 If you use this code and dataset, please cite:
 
 >    Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler,  Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Mehmet Turan. "Quantitative Evaluation of Endoscopic SLAM 
@@ -17,7 +15,9 @@ Methods: ENDO-SLAM Dataset.".
 
 We introduce a comprehensive endoscopic SLAM dataset containing both capsule and standard endoscopy recordings.
 
-In total, 35 sub-datasets are provided: 18 sub-datasets for colon, 12 sub-datasets for stomach and five sub-datasets for small intestine, whereas four of these contain polyp-mimicking elevations carried out by an expert gastroenterologist. 
+In total, 35 sub-datasets are provided: 18 sub-datasets for colon, 12 sub-datasets for stomach and five sub-datasets for small intestine, while four of these contain polyp-mimicking elevations carried out by an expert gastroenterologist.
+
+The dataset is publicly available at [DropBox](https://www.dropbox.com/sh/l8n581q0ia97u31/AACDzAkd1Zlb3KY6dVarOMw8a?dl=0) and a video demonstrating the experimental setup and procedure is available at  [YouTube](https://www.youtube.com/watch?v=G_LCe0aWWdQ)
 
 ### Contributions
 
@@ -61,11 +61,15 @@ The equipment employed during generation of the dataset from eight ex-vivo porci
 
 ### 3D Reconstruction and Evaluation Pipeline
 
+The main steps of the pipeline are Otsu threshold-based reflection detection, OPENCV inpainting-based reflection suppression, feature mathcing and tracking based image stitching and non-lambertion surface reconstruction. Feature point correspondences between frames are established using SIFT feature matching and RANSAC based pair elimination. To estimate the depth map, Tsai-Shah shape from shading approach was applied. This surface reconstruction method applies a discrete approximation of the gradients and then employs the linear approximation of the reflectance function in terms of the depth directly.
+
+The steps and output maps aligned with the ground truth scanned data are demonstrated below. Using that pipeline, RMSEs of 1.09 cm, 1.02 cm and 1.11 cm were obtained for Colon-IV, Small Intestine and Stomach-III trajectories, respectively.
+
 <p align="center">
 <img src='imgs/stitching3.png' width=620/> 
 </p>
 
-**a** shows input image sequences from Colon-IV, Small Intestine and Stomach-III trajectories which were downsampled to 4 fps and given as input to Scale Invariant Feature Transform (SIFT), separately. **b** shows the final panorama view which was formed by aligning and blending all input images. Specularities are suppressed using inpainting function of OpenCV. **c** shows 3D scanner point cloud data for each organ in ply-format. **d** shows pixel-wise depth values for inpainted images which were predicted using shape from shading. **e** shows the matched area between reference and aligned cloud points by emphasizing it with white dots. Iterative Closest Point(ICP) was used to align the ground truth data and reconstructed surface after manually labelling a common line segment. **f** shows the cloud mesh distances in the form of heatmap with the bar displaying the root mean square error values in terms of cm for color space. The resultant RMSE values for Colon-IV, Small Intestine and Stomach-III are 1.09 cm, 1.02 cm and 1.11 cm, respectively.
+**a** shows input image sequences from Colon-IV, Small Intestine and Stomach-III trajectories which were downsampled to 4 fps and given as input to Scale Invariant Feature Transform (SIFT), separately. **b** shows the final panorama view which was formed by aligning and blending all input images. Specularities are suppressed using inpainting function of OpenCV. **c** shows 3D scanner point cloud data for each organ in ply-format. **d** shows pixel-wise depth values for inpainted images which were predicted using shape from shading. **e** shows the matched area between reference and aligned cloud points by emphasizing it with white dots. Iterative Closest Point(ICP) was used to align the ground truth data and reconstructed surface after manually labelling a common line segment. **f** shows the cloud mesh distances in the form of heatmap with the bar displaying the root mean square error values in terms of cm for color space. 
 
 ### Image Modifications
 
