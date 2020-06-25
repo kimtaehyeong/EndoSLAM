@@ -1,11 +1,6 @@
 # Endo-SLAM Dataset
 In this repository, endoscopy image dataset and the codes to manipulte these images and how these modifications affect the visual odometry algorithms will be introduced. 
 
-<p align="center">
-  <img src="imgs/teaser.gif" alt="Quantitative Evaluation of Endoscopic SLAM Methods: Endo-SLAM Dataset
-" width="600" />
-</p>
-
 If you use this code and dataset, please cite:
 
 >    Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler,  Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Mehmet Turan. "Quantitative Evaluation of Endoscopic SLAM 
@@ -17,7 +12,7 @@ We introduce a comprehensive endoscopic SLAM dataset containing both capsule and
 
 In total, 35 sub-datasets are provided: 18 sub-datasets for colon, 12 sub-datasets for stomach and five sub-datasets for small intestine, while four of these contain polyp-mimicking elevations carried out by an expert gastroenterologist.
 
-The dataset is publicly available at [DropBox](https://www.dropbox.com/sh/l8n581q0ia97u31/AACDzAkd1Zlb3KY6dVarOMw8a?dl=0) and a video demonstrating the experimental setup and procedure is available at  [YouTube](https://www.youtube.com/watch?v=G_LCe0aWWdQ)
+The dataset is publicly available in [DropBox](https://www.dropbox.com/sh/l8n581q0ia97u31/AACDzAkd1Zlb3KY6dVarOMw8a?dl=0) and a video demonstrating the experimental setup and procedure is available on [YouTube](https://www.youtube.com/watch?v=G_LCe0aWWdQ)
 
 ### Contributions
 
