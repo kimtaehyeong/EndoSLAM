@@ -8,9 +8,7 @@ Methods: ENDO-SLAM Dataset.".
 
 ## Overview
 
-We introduce a comprehensive endoscopic SLAM dataset containing both capsule and standard endoscopy recordings.
-
-In total, 35 sub-datasets are provided: 18 sub-datasets for colon, 12 sub-datasets for stomach and five sub-datasets for small intestine, while four of these contain polyp-mimicking elevations carried out by an expert gastroenterologist.
+We introduce a comprehensive endoscopic SLAM dataset containing both capsule and standard endoscopy recordings. In total, 35 sub-datasets are provided: 18 sub-datasets for colon, 12 sub-datasets for stomach and five sub-datasets for small intestine, while four of these contain polyp-mimicking elevations carried out by an expert gastroenterologist.
 
 The dataset is publicly available in [DropBox](https://www.dropbox.com/sh/l8n581q0ia97u31/AACDzAkd1Zlb3KY6dVarOMw8a?dl=0) and a video demonstrating the experimental setup and procedure is available on [YouTube](https://www.youtube.com/watch?v=G_LCe0aWWdQ)
 
@@ -55,6 +53,16 @@ The ex-vivo part of dataset consists of a total of 42,700 frames. Of these, 21,4
 </p>
 
 **a** shows RGB images of organs **b** shows corresponding 3D reconstruction from .ply files for organs recorded via  3D Scanner.
+
+### Qualitative Results of Pose Estimation 
+
+The unsupervised pose prediction algorithm SC-SfMLearner is trained with synthetic data  and the predicted pose results are aligned and plotted with their corresponding ground truth. For the fourth trajectory(Traj-IV) of small intestine, the results on blur effect added images with parameters α=3, β=3, γ=1  (**d** and **h**) exhibits the adverse effect of adding post-processing distortions which then yields less prediction performance compared to the original recordings. 
+
+The tested algorithm tracks loopy sections of the trajectories for most of the cases but predicted trajectories often fail to overlap with their ground truth counterparts, leaving offset in between.
+
+<p align="center">
+<img src='imgs/Q1.png' width=620/> 
+</p>
 
 ### 3D Reconstruction and Evaluation Pipeline
 
