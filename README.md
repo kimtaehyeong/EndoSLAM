@@ -109,66 +109,9 @@ cd Endo-SLAM
 
 ### 4. Dataset Organization
 
-```python
-Endo-SLAM-Dataset
-| 
-└── Cameras            
-|     └──PillCam
-|     |   ├── Calibration
-|     |   ├── Colon-I(L-shaped)
-|     |   |   └── TumorfreeTrajectory_i i={1,2,3}
-|     |   |   |   ├── Poses
-|     |   |   |   └── Frames
-|     |   |   └── TumorousTrajectory_i i={4}
-|     |   |       ├── Poses
-|     |   |       └── Frames
-|     |   |
-|     |   └── Colon-II(Z-shaped)
-|     |       └── TumorfreeTrajectory_i i={1,2}
-|     |       |    ├── Poses
-|     |       |    └── Frames
-|     |       └── TumorousTrajectory_i i={3}
-|     |            ├── Poses
-|     |            └── Frames
-|     └── MiroCam
-|     |   ├── Calibration
-|     |   └── Colon-III(L-shaped) 
-|     |       └──TumorfreeTrajectory_i i={1,3,4,5}
-|     |       |   ├── Poses
-|     |       |   └── Frames
-|     |       └── TumorousTrajectory_i i={6,7}
-|     |           ├── Poses
-|     |           └── Frames             
-|     └── HighCam
-|     |   ├── Calibration
-|     |   └── Colon-IV, Small Intestine, Stomach-I,II,III
-|     |   	└── TumorfreeTrajectory_i i = {1,...,k} 
-|     |             ├── Poses       
-|     |             └── Frames              
-|     └── LowCam
-|         ├── Calibration  
-|         └── Colon-IV, Small Intestine, Stomach-I,II,III
-|         	└── TumorfreeTrajectory_i i = {1,...,k} 
-|                   ├── Poses       
-|                   └── Frames            
-| 
-└── Cameras(Modified)
-|     └──PillCam, MiroCam, HighCam, LowCam
-|         ├── Calibration
-|         └── Colon-I,II,III,IV, Small Intestine, Stomach-I,II,III
-|               ├── Poses   
-|               └── Frames              
-| 
-└── 3D_Scanners
-|     └──Colon-III, Colon-IV, Small Intestine, Stomach-I,II,III 
-|         └──(.fig, .obj, .ply, .ASC, .STL)  
-|
-└── Unity Camera
-      ├── Calibration
-      └── Colon
-          ├── Poses       
-          └── Frames 
-```
+<p align="left">
+<img src='imgs/datatree.png' width=520/> 
+</p>
 
 ## Results
 
