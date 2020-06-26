@@ -58,16 +58,6 @@ The ex-vivo part of dataset consists of a total of 42,700 frames. Of these, 21,4
 
 **a** shows RGB images of organs **b** shows corresponding 3D reconstruction from .ply files for organs recorded via  3D Scanner.
 
-### Qualitative Results of Pose Estimation 
-
-The unsupervised pose prediction algorithm SC-SfMLearner is trained with synthetic data  and the predicted pose results are aligned and plotted with their corresponding ground truth. For the fourth trajectory(Traj-IV) of small intestine, the results on blur effect added images with parameters α=3, β=3, γ=1  (**d** and **h**) exhibits the adverse effect of adding post-processing distortions which then yields less prediction performance compared to the original recordings. 
-
-The tested algorithm tracks loopy sections of the trajectories for most of the cases but predicted trajectories often fail to overlap with their ground truth counterparts, leaving offset in between.
-
-<p align="center">
-<img src='imgs/Q1.png' width=820/> 
-</p>
-
 ### 3D Reconstruction and Evaluation Pipeline
 
 The main steps of the pipeline are Otsu threshold-based reflection detection, OPENCV inpainting-based reflection suppression, feature mathcing and tracking based image stitching and non-lambertion surface reconstruction. Feature point correspondences between frames are established using SIFT feature matching and RANSAC based pair elimination. To estimate the depth map, Tsai-Shah shape from shading approach was applied. This surface reconstruction method applies a discrete approximation of the gradients and then employs the linear approximation of the reflectance function in terms of the depth directly.
@@ -121,6 +111,18 @@ cd Endo-SLAM
 
 The SC-SfMLearner algorithm was used to show the use-case of dataset.
 
+### Qualitative Results of Pose Estimation 
+
+The unsupervised pose prediction algorithm SC-SfMLearner is trained with synthetic data  and the predicted pose results are aligned and plotted with their corresponding ground truth. For the fourth trajectory(Traj-IV) of small intestine, the results on blur effect added images with parameters α=3, β=3, γ=1  (**d** and **h**) exhibits the adverse effect of adding post-processing distortions which then yields less prediction performance compared to the original recordings. 
+
+The tested algorithm tracks loopy sections of the trajectories for most of the cases but predicted trajectories often fail to overlap with their ground truth counterparts, leaving offset in between.
+
+<p align="center">
+<img src='imgs/Q1.png' width=820/> 
+</p>
+
+### Statistical Analysis
+
 Model-I, Model-II and Model-III performances are compared for six level fish eye distortion with μ = 1, 0.8, 0.7, 0.6, 0.5, 0.25. For Model-II, increasing distortion differences between compared groups result in decreasing p-values for absolute trajectory error as expected. Whereas, Model-I and Model-III which are trained by dataset including ex-vivo endoscopy images do not show the same tendency. Despite the fact that no statistical significance is achieved in terms of ATE on all distorted levels, we observe p<0.05 for rotational RPE.
 
 <p align="center">
@@ -133,9 +135,7 @@ Model performances are compared for six level of Gaussian blurring effect with p
 <img src='imgs/gauss.png' width=820/> 
 </p>
 
-
-
-## Acknowledgments
+## Reproducibility
 
 ...
 
