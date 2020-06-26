@@ -7,7 +7,7 @@ In this repository, endoscopy image dataset and the codes to manipulte these ima
 
 If you use this code and dataset, please cite:
 
->    Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler,  Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Mehmet Turan. "Quantitative Evaluation of Endoscopic SLAM 
+>    Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler,  Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Hunter B. Gilbert, and Mehmet Turan. "Quantitative Evaluation of Endoscopic SLAM 
 Methods: ENDO-SLAM Dataset.". 
 
 ## Overview
@@ -146,7 +146,7 @@ If you find this work useful in your research please consider citing our paper:
 ```
 @article{Bengisu2020,
     title={Quantitative Evaluation of EndoscopicSLAM Methods: ENDO-SLAM Dataset},
-    author={Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler, Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Mehmet Turan},
+    author={Kutsev Bengisu Ozyoruk, Kagan Incetan, Gulfize Coskun, Guliz Irem Gokceler, Yasin Almalioglu, Faisal Mahmood, Nicholas J. Durr, Eva Curto, Luis Perdigoto, Marina Oliveira, Helder Araujo, Henrique Alexandrino, Hunter B. Gilbert, Mehmet Turan},
     journal={arXiv preprint },
     year={2020}
 }
