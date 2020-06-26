@@ -121,6 +121,18 @@ cd Endo-SLAM
 
 The SC-SfMLearner algorithm was used to show the use-case of dataset.
 
+Model-I, Model-II and Model-III performances are compared for six level fish eye distortion with μ = 1, 0.8, 0.7, 0.6, 0.5, 0.25. For Model-II, increasing distortion differences between compared groups result in decreasing p-values for absolute trajectory error as expected. Whereas, Model-I and Model-III which are trained by dataset including ex-vivo endoscopy images do not show the same tendency. Despite the fact that no statistical significance is achieved in terms of ATE on all distorted levels, we observe p<0.05 for rotational RPE.
+
+<p align="center">
+<img src='imgs/fisheye.png' width=820/> 
+</p>
+
+Model performances are compared for six level of Gaussian blurring effect with parameter set α = (5,11,13,17,23,27), β = (5,50,100,110,120,150) and γ = (5,7,10,20,40,80), respectively. We do not observe any p-value less than 0.05 in terms of ATE for all models. However, Model-II performs significantly different(p<0.05) on first degradation level compared to sixth and fifth degradation level in terms of rotational error.
+
+<p align="center">
+<img src='imgs/gauss.png' width=820/> 
+</p>
+
 
 
 ## Acknowledgments
